@@ -63,5 +63,14 @@
 	<h1>龙爷凉茶</h1>
 	<p>快来选购您的专属凉茶吧</p>
 	<button onclick="location.href='#小程序://龍爷凉茶店/FSYX2Y04eJQsj5G'">点击跳转</button>
+	<button class="btn" onclick="gotoMiniProgram()">打开小程序</button>
+	<script>
+	function gotoMiniProgram() {
+	  var appId = "wxedff3b73d3e7a028"; // 小程序的appid
+	  var path = "/龍爷凉茶店/FSYX2Y04eJQsj5G"; // 小程序的页面路径
+	  var url = "https://servicewechat.com/" + appId + "/" + path; // 将小程序的appid和页面路径组合成url
+	  window.location.href = url; // 跳转到小程序的链接
+	}
+	</script>
 </body>
 </html>
