@@ -10,39 +10,49 @@
 			background-repeat: no-repeat;
 			background-position: center top;
 		}
-		h1 {
-			text-align: center;
-			color: white;
-			font-size: 80px;
-			margin-top: 200px;
-			text-shadow: 3px 3px #3E3E3E;
-			font-family: "Microsoft YaHei", sans-serif;
-		}
-		.button-container {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 50px;
-		}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-size: 80px;
+  margin-top: 150px;
+  margin-bottom: 80px; /* 增加标题和按钮之间的距离 */
+  text-shadow: 3px 3px #3E3E3E;
+  font-family: "Microsoft YaHei", sans-serif;
+  position: relative;
+}
+
 		.button {
-			background-color: white;
+  background-color: white;
   color: black;
   border: 2px solid #1B813E;
   border-radius: 50%;
-  padding: 16px 24px;
+  padding: 20px 32px; /* 增加按钮的大小 */
   font-size: 24px;
   font-weight: bold;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
-  margin: 20px;
+  display: block;
+  margin: 10px 0;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-		}
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: absolute;
+  left: 100px; /* 将按钮整体向右移动100像素 */
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: 30px;
+}
+
 		.button:hover {
 			background-color: #1B813E;
-  color: white;
-  border: 2px solid white;
-  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+			color: white;
+			border: 2px solid white;
+			box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 		}
 	</style>
 </head>
