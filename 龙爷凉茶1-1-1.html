@@ -20,6 +20,7 @@
 			margin-top: 200px;
 			text-shadow: 3px 3px #3E3E3E;
 		}
+		
 		button {
 			background-color: #1B813E;
 			color: white;
@@ -36,11 +37,12 @@
 			background-color: #3E3E3E;
 			box-shadow: 3px 3px #3E3E3E;
 		}
+
 		p {
 			text-align: center;
 			font-size: 36px;
 			margin-top: 150px;
-			margin-top: 400px;
+			margin-top: 600px;
 		}
 		.btn {
 			background-color: #1B813E;
@@ -58,10 +60,31 @@
 			background-color: #3E3E3E;
 			box-shadow: 3px 3px #3E3E3E;
 		}
+		h1 {
+ 			 text-align: center;
+ 			 font-size: 100px;
+			  margin-top: 200px;
+			  text-shadow: 3px 3px #3E3E3E;
+			  position: relative; /* 添加相对定位 */
+			}
+
+		h1 img {
+ 			 position: absolute; /* 添加绝对定位 */
+			  bottom: -500px; /* 调整图片距离文字的位置 */
+			  left: 50%; /* 让图片水平居中对齐 */
+ 			 transform: translateX(-50%); /* 进一步调整图片的水平位置 */
+			width: 50%; /* 图片宽度为容器的 50% */
+                        height: auto; /* 图片高度按比例自适应 */
+			}
+
 	</style>
 </head>
 <body>
-	<h1>龙爷凉茶</h1>
+
+	<h1>龙爷凉茶
+	  <br>
+	  <img src="龙爷凉茶1-1-1图片.jpg" alt="Your Image">
+	</h1>
 	<p>快去购买您的专属凉茶吧</p>
 	<button onclick="location.href='https://wxaurl.cn/pSer7I4cxXc'">开始选购</button>
 </body>

@@ -11,42 +11,42 @@
 			background-position: center top;
 		}
 
-h1 {
-  text-align: center;
-  color: white;
-  font-size: 80px;
-  margin-top: 150px;
-  margin-bottom: 80px; /* 增加标题和按钮之间的距离 */
-  text-shadow: 3px 3px #3E3E3E;
-  font-family: "Microsoft YaHei", sans-serif;
-  position: relative;
-}
+		h1 {
+			text-align: center;
+			color: white;
+			font-size: 80px;
+			margin-top: 200px;
+			margin-bottom: 50px; /* 增加标题和按钮之间的距离 */
+			text-shadow: 3px 3px #3E3E3E;
+			font-family: "Microsoft YaHei", sans-serif;
+			position: relative;
+		}
 
 		.button {
-  background-color: white;
-  color: black;
-  border: 2px solid #1B813E;
-  border-radius: 50%;
-  padding: 20px 32px; /* 增加按钮的大小 */
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  text-decoration: none;
-  display: block;
-  margin: 10px 0;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-}
+			background-color: white;
+			color: black;
+			border: 2px solid #1B813E;
+			border-radius: 50%;
+			padding: 20px 32px; /* 增加按钮的大小 */
+			font-size: 24px;
+			font-weight: bold;
+			text-align: center;
+			text-decoration: none;
+			display: block;
+			margin: 10px 0;
+			box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+		}
 
-.button-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  position: absolute;
-  left: 100px; /* 将按钮整体向右移动100像素 */
-  top: 50%;
-  transform: translateY(-50%);
-  margin-top: 30px;
-}
+		.button-container {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			position: absolute;
+			left: 200px; /* 将按钮整体向右移动100像素 */
+			top: 50%;
+			transform: translateY(-50%);
+			margin-top: 30px;
+		}
 
 		.button:hover {
 			background-color: #1B813E;
@@ -54,15 +54,40 @@ h1 {
 			border: 2px solid white;
 			box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 		}
+
+		.button1 {
+			position: relative;
+		}
+
+		.button1::after {
+  		        content: '感冒';
+  		        display: block;
+                        position: absolute;
+                        top: 0;
+                        left: 300%;
+                        width: 200px;
+                        height: 50%;
+                        background-color: white;
+                        border: 2px solid #1B813E;
+                        border-radius: 0%;
+                        padding: 20px 32px;
+                        font-size: 24px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+   		        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+			}
+
+
 	</style>
 </head>
 <body>
 	<h1>龙爷凉茶</h1>
 	<div class="button-container">
-		<a href="龙爷凉茶1-1.html" class="button">1</a>
-		<a href="龙爷凉茶1-2.html" class="button">2</a>
-		<a href="龙爷凉茶1-3.html" class="button">3</a>
-		<a href="龙爷凉茶1-4.html" class="button">4</a>
+		<a href="龙爷凉茶1-1.html" class="button button1">1</a>
+		<a href="" class="button">2</a>
+		<a href="" class="button">3</a>
+		<a href="" class="button">4</a>
 	</div>
 </body>
 </html>
